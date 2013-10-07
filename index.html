@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Минус часы</title>
+		<meta http-equiv="Content-Language" content="ru">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<style>
+			html{font-family:sans-serif;color:#555555;}
+			
+			html, body, table, tr, td { height: 100% }
+			
+			table, tr, td { width: 100%; }
+			td {
+				text-align: center;
+				vertical-align: middle;
+			}
+			
+			#watch{
+			  font-size: 400%;
+			  color: #000;
+			}
+		</style>
+	</head>
+	<body onload="start_countdown_to('30-10-2013 12:00:00')">
+		<table>
+			<tr>
+				<td>
+					<h1>До конца обучения осталось</h1>
+
+					<div id="watch"></div>
+				</td>
+			</tr>
+		</table>
+		
+		<script src="display.js"></script>
+		<script src="configuration.js"></script>
+		<script src="functions.js"></script>
+
+	</body>
+</html>
