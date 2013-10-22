@@ -7,10 +7,10 @@
  * @param {Array} broken_data числа, которые необходимо показать (например, [12, 13, 55, 18])
  * Функция не возвращает никаких данных
  */
-var display_countdown_timer = function(days, hours, minutes, seconds){
+Configuration.prototype.display_countdown_timer = function(days, hours, minutes, seconds){
   var text = "";
-  for (i = 0;i < arguments.length;i++) {
-    text = text + "<span>" + arguments[i] + "</span> " + choose_in_case(arguments[i], config.names_interval[i]) + " ";
+  for (i = 0; i < arguments.length; i++) {
+    text = text + "<span>" + arguments[i] + "</span> " + config.choose_in_case(arguments[i], config.names_interval[i]) + " ";
   }
   document.getElementById("watch").innerHTML = text;
 }
@@ -23,6 +23,6 @@ var display_countdown_timer = function(days, hours, minutes, seconds){
  *
  * Не получает и не отдает данные
  */
-var display_timeout = function(){
+Configuration.prototype.display_timeout = function(){
   document.getElementById("watch").innerHTML = "<p>Ваше обучение окончено</p>";
 }
